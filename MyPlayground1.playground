@@ -1,0 +1,307 @@
+import UIKit
+
+///Exercise 1
+//var str = "Hello, playground"
+//var message:String = "This is a String"
+//var fullName="Najiba Halim"
+//var aMessage="hey There"
+//var firstName="Najiba"
+//var lastname="Halim"
+//
+//fullName=firstName + " " + lastname
+//print(fullName)
+//
+//var age=22
+//var newmessage:String = "hi My name is \(firstName) and I am \(age) years old"
+//
+//newmessage.append(". ANd I dont like scary clowns. ")
+//print(newmessage)
+//
+//var name="Safi"
+//var age1=20
+//var weight=45.5
+//var isOrganDonor=false
+//
+//print(weight)
+//weight=46.3
+//print(weight)
+//
+//let eyeColor="Black"
+//
+//var age2=15
+//var price=10.99
+//
+//var aPrice:Float = 10.99
+//var personAge:Int = 15
+//var thePrice:Double = 10.99
+//
+//var length = 10
+//var width = 5
+//
+//let area = length * width
+//
+//var health = 100
+//var poisonDamage = 12
+//health = health - poisonDamage
+//print(health)
+//health-=1
+//print(health)
+//
+//var potion = 20
+//health+=potion
+//health = health + potion
+//
+//var students = 30
+//var treats = 500
+//
+//let treatPerStudent = treats / students
+//print(treatPerStudent)
+//
+//let remainder = treats % students
+//print(remainder)
+//
+//var tLength:Double = 10
+//var tWidth:Double = 5
+//
+//let areaTriangle = sqrt(pow(tLength,2) + pow(tWidth,2))
+//print(areaTriangle)
+//
+//var quantity = 5
+//var productPrice = 10.99
+
+//input in swift
+//import Foundation
+//
+//var inputString = readLine() ?? String()
+//let array: [Int] = inputString.components(separatedBy: " ").map { Int($0) ?? Int() }
+//let n = array[0]
+//let k = array[1]
+//var count = 0
+//
+//for _ in 1...n {
+//    let number = Int(readLine() ?? String()) ?? 0
+//    if number % k == 0 { count += 1 }
+//}
+//
+//print(count)
+
+
+//Codechef problem 1
+//let A = [1, 2 ,3 ,5 ,6 ,8 ,9, 10, 11, 12, 15, 17, 18]
+//
+//print(A[0])
+//let n = A.capacity
+//
+//var compressedString = ""
+//var csize:Int = 0
+//var i = 0
+//
+//while i<n {
+//    csize = 1
+//    var j = i+1
+//    while j<n && A[j] == A[j-1]+1{
+//        j+=1
+//        csize+=1
+//    }
+//    if csize > 2 {
+//        compressedString.append(",\(A[i])...\(A[j-1])")
+//    }
+//    else if(csize==2){
+//        compressedString.append(",\(A[i]),\(A[j-1])")
+//    }
+//    else{
+//         compressedString.append(",\(A[i])")
+//    }
+//    i=j
+//}
+//compressedString.remove(at: compressedString.startIndex)
+//print(compressedString)
+//
+//
+////Week2
+//var amITheBestTeacherEver: Bool = true
+//amITheBestTeacherEver = false
+//if true == false || true==true {
+//    print("WTFish")
+//}
+//
+//var hasDataFinishedDownloading: Bool = false
+////...
+////...
+//if(!hasDataFinishedDownloading){
+//    print("Loading Data...")
+//}
+//hasDataFinishedDownloading = true
+//var bankBalance = 400
+//var itemToBuy = 100
+//if bankBalance > itemToBuy{
+//    print("Purchased Item")
+//}
+//if(itemToBuy > bankBalance){
+//    print("You need more money foo" )
+//}
+//if(itemToBuy == bankBalance){
+//    print("Hey buddy, your balance is now 0")
+//}
+//
+//var bookTitle1 = "Harry Po"
+//var bookTitle2 = "Harry Po"
+//
+//if(bookTitle1 != bookTitle2){
+//    print("You need to fix spelling before printing")
+//}else if bookTitle2.count > 10{
+//    print("Find a new Title for the book")
+//} else {
+//    print("Book looks great send to printer.")
+//}
+//
+//let allowedEntry = false
+//if(!allowedEntry ){
+//    print("ACCESS DENIED")
+//
+//}
+//let enteredDoorCode = true
+//let passedRetinaScan = false
+//let iAmTomCruiseFromMissionImpossible = false
+//
+//if(enteredDoorCode && passedRetinaScan || iAmTomCruiseFromMissionImpossible){
+//    print("Welcome")
+//}else {
+//    print("ACCESS DENIED AGAIN")
+//}
+//
+//let hasDoorKey = false
+//let knowsOverridePassword = true
+//if hasDoorKey || knowsOverridePassword {
+//    print("Welcome!!!")
+//}else{
+//    print("YOU STILL AIN'T GETTING FOOL!")
+//}
+//
+//var employee1Salary = 45000.00
+//var employee2Salary = 54000.0
+//var employee3Salary = 100000.0
+//var employee4Salary = 20000.0
+//
+//var employeeSalaries: [Double] = [45000.0,54000.0,100000.0,200000.0]
+//print(employeeSalaries.count)
+//
+//employeeSalaries.append(39000.34)
+//print(employeeSalaries.count)
+//employeeSalaries.remove(at: 1)
+//print(employeeSalaries.count)
+//
+//var students = [String]()
+//print(students.count)
+//students.append("Jon")
+//students.append("Jacob")
+//students.append("Jose")
+//students.append("Jingle")
+//students.append("Heimer")
+//students.append("Smith")
+//
+//students.remove(at:2)
+//print(students)
+//
+//var salaries = [45000.0,54000.0,100000.0,200000.0,45000.0,54000.0,100000.0,200000.0,45000.0,54000.0,100000.0,200000.0,45000.0,54000.0,100000.0,200000.0,45000.0,54000.0,100000.0,200000.0,45000.0,54000.0,100000.0,200000.0]
+//var index = 0
+//repeat {
+//    salaries[index] = salaries[index] + (salaries[index] * 0.10)
+//    index+=1
+//}while(index < salaries.count)
+//
+//for x in 1...5 {
+//    print("Index: \(x)")
+//}
+//
+//for z in 1..<5{
+//    print("Index Z: \(z)")
+//}
+//
+//for i in 0..<salaries.count {
+//    salaries[i] = salaries[i] + (salaries[i] * 0.10)
+//}
+//
+//for salary in salaries {
+//    print("Salary: \(salary)")
+//}
+//
+//
+//
+//
+//// booleans and conditional operators
+//var amITheBestTeacherEver: Bool = true
+//amITheBestTeacherEver = false
+//
+//if true == false || true == true {
+//    print("WTFISH")
+//}
+//var hasDataFinishedDownloading: Bool = 1 == 2
+////...
+////...
+//hasDataFinishedDownloading = true
+////Load UI and other app features
+//
+//if 2 == 2 {
+//    print("Should not see this")
+//}
+////Equal to: ==
+////Not equal to: !=
+////Greater than: >
+////Greater than or equal to: >=
+////Less than or equal to: <
+////Less than: <
+//
+//var bankBalance = 400
+//var itemToBuy = 100
+//if bankBalance >= itemToBuy {
+//    print("purchased item")
+//}
+//if itemToBuy > bankBalance {
+//    print("You need more money foo")
+//}
+//if(itemToBuy == bankBalance) {
+//    print("hey buddy, your balance is now 0");
+//}
+//var amIAtZero = itemToBuy == bankBalance
+//
+//var bookTitle1 = "Harry Blotter and the Moppet of Mire"
+//var bookTitle2 = "Harry Blotter nd the Moppet of Mire"
+//if bookTitle1 != bookTitle2 {
+//    print("Need to fix spelling before printing")
+//} else if bookTitle2.count > 10 {
+//    print("Find a new title for the book")
+//} else {
+//    print("Book looks great, send to printer")
+//}
+//
+//if !hasDataFinishedDownloading {
+//    print("Loading Data")
+//}
+/// test
+//var invalid = true
+//var valid = false
+//let result = invalid == valid
+
+///Logical Operators
+let allowedEntry = false
+if allowedEntry {
+    print("ACCESS DENIED")
+}
+let enteredDoorCode = true
+let passedRetinaScan = false
+let iAmTomCruiseFromMissionImpossible = true
+if enteredDoorCode && passedRetinaScan  || iAmTomCruiseFromMissionImpossible {
+    print("Welcome")
+} else {
+    print("ACCESS DENIED AGAIN")
+}
+let hasDoorKey = false
+let knowsOverridePassword = true
+if hasDoorKey || knowsOverridePassword {
+    print("welcome !!!")
+} else {
+    print("YOU STILL AUNT GETTING IN FOO");
+}
+
+
