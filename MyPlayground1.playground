@@ -327,4 +327,45 @@ students.append("Smith")
 students.remove(at:2)
 print(students)
 
+///LoopidyLoops
+//Bad way
+employee1Salary = employee1Salary + (employee1Salary * 0.10)
+employee2Salary = employee2Salary + (employee2Salary * 0.10)
+employee3Salary = employee3Salary + (employee3Salary * 0.10)
+employee4Salary = employee4Salary + (employee4Salary * 0.10)
+
+//Mo' Betta
+var salaries = [45000.0,10000.0,54000.0,20000.0,45000.0,10000.0,54000.0,20000.0,45000.0,10000.0,54000.0,20000.0,45000.0,10000.0,54000.0,20000.0,45000.0,10000.0,54000.0,20000.0,45000.0,10000.0,54000.0,20000.0,]
+salaries[0] = salaries[0] + (salaries[0] * 0.10)
+salaries[1] = salaries[1] + (salaries[1] * 0.10)
+//...
+var index = 0
+repeat {
+    salaries[index] = salaries[index] + (salaries[index] * 0.10)
+    index += 1
+} while (index < salaries.count)
+
+for i in 0..<salaries.count {
+    salaries[i] = salaries[i] + (salaries[i] * 0.10)
+}
+
+for z in 1..<5{
+    print("Index z: \(z)")
+}
+
+for x in 1...5{
+    print("Index X:\(x)")
+}
+
+for salary in salaries {
+    print("Salary \(salary)")
+}
+
+var result = 0
+for x in 0...11 {
+    result += x
+}
+print(result)
+
+
 
